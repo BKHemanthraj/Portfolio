@@ -2,9 +2,6 @@
 
 This is my personal portfolio website showcasing my projects, skills, experience, and contact details. The portfolio is fully responsive and built using HTML, CSS, JavaScript (or Django, if applicable).
 
-## 🔗 Live Demo
-[Visit My Portfolio]( https://bkhemanthraj.github.io/Portfolio/) <!-- Replace with your actual deployed URL -->
-
 ## 📂 Features
 - 👨‍💻 About Me section
 - 🧠 Skills and Tech Stack
