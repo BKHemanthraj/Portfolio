@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{%  load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar</title>
+  <link rel="stylesheet"  href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'/>
+   <style>
+        body {
+            background: url("{% static 'images/background.png' %}") no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body style="background:{% static 'images/background.png' %}">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-p">
+      <h2>PORTFOLIO</h2>
+    </div>
+
+    <nav class="nav-link" id="navMenu">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#techstack">Tech Stack</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="{% static 'resume/B K Hemanth Raj Resume.pdf' %}" download class="download-btn">Resume</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile-section" id="home">
+    <div class="profile-text">
+      <h3>Hi, I'm</h3>
+      <h1>B K HEMANTH RAJ</h1>
+      <p>I’m a versatile and detail-oriented Full-Stack Web Developer skilled in building
+        scalable and responsive web applications using technologies like Python, Django, HTML, CSS, JavaScript, and SQL. <br>Proven Ability To Work Collaboratively In Team Settings And Adapt To Dynamic Environments To Develop Strong analytical
+skills and a passion for problem-solving. </p>
+    </div>
+    <div class="profile-image">
+      <img src="{% static 'images/photo.png' %}" alt="Hemanth Raj" />
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+ <div class="tech-container" style="background-color: #FFE6EB;">
+    <section class="tech-stack" id="techstack">
+      <div class="tech-group">
+        <div class="section-title">Front-End Technologies</div>
+        <div class="stack-row">
+          <div class="tech-pill">HTML5</div>
+          <div class="tech-pill">CSS3</div>
+          <div class="tech-pill">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="tech-group">
+        <div class="section-title">Back-End Technologies</div>
+        <div class="stack-row">
+          <div class="tech-pill">Python</div>
+          <div class="tech-pill">Django Framework</div>
+        </div>
+      </div>
+
+      <div class="tech-group">
+        <div class="section-title">Database</div>
+        <div class="stack-row">
+          <div class="tech-pill">MySQL</div>
+          <div class="tech-pill">SQLite</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="main-container">
+      <div class="card-list">
+        <div class="card-item">
+          <img src="{% static 'images/pentagonlogo.jpg' %}" alt="Pentagon Space" />
+          <h2 style="color: #984063;">Full-Stack Developer</h2>
+          <button onclick="showDetails(
+          'experience',
+         'Full-Stack Developer Intern',
+       '<ul>'+
+       '<li>Professional Training At Pentagon Space, A Bengaluru-Based Institute Focused On Cutting-Edge Software Technologies.</li>'+
+       '<li>Acquired Hands-On Experience In Front-End Development (HTML, CSS, Javascript) And Backend Programming With Python And SQL-Based Database Systems.</li>'+
+       '<li>Developed Full-Stack Web Applications And Relational Databases Through Real-Time Projects, Strengthening Coding And Analytical Skills.</li>'+
+       '<li>Gained Deep Insights Into Programming Fundamentals Using Python, Improving Logical Reasoning And Technical Proficiency.</li>'+
+       '<li>Collaborated On Team-Based Coding Projects, Simulating Real-World Development Environments And Improving Communication And Teamwork Skills.</li>'+
+       '<li><B>Tech Stack:</B> Python, Django, HTML, CSS, Javascript, SQL, Git</li>'+
+       '</ul>'+
+      '<B><U>About</U></B>' +
+       '<ul>' +
+       '<li>Pentagon Space Is A Fast Growing Tech Training Institute Founded In 2020 In Bengaluru, Specializing In Full Stack Software Development, Software Testing.</li>' +
+       '<li>Students Work On Real Time Industry Based Projects And Practicing Both Front End (HTML, CSS, React) And Back End (Python, Django, REST Apis, SQL) Technologies</li>'+
+       '</ul>')">View Details</button>
+              </div>
+        <div class="card-item">
+          <img src="{% static 'images/acclogo.png' %}" alt="Accurate Info Solution" />
+          <h2 style="color: #984063;">Web Development Using Python</h2>
+          <button onclick="showDetails(
+          'experience',
+          'Web Development Using Python',
+          '<ul>' +
+          '<li>Developed Dynamic Web Applications Using Python, Flask, HTML, CSS, And Javascript.</li>' +
+          '<li>Implemented Restful Apis And Connected Web Apps To SQL Databases.</li>' +
+          '<li>Collaborated On Version Control Using Github And Followed Agile Workflows.</li>' +
+          '<li>Worked On Form Handling, User Authentication, And CRUD Operations.</li>' +
+          '<li><B>Tech Stack:</B> Python, Flask, HTML, CSS, Javascript, SQL, Git, REST Apis</li>' +
+          '<li><B>Certificate:</B> <A Href=\'Https://Drive.Google.Com/File/D/1yanguudl4yqqtmw2k-Bw0sYrrLGquGON/View?Usp=Sharing\' Target=\'_Blank\'>View Certificate</A></li>' +
+        '</ul>'+
+          '<B><U>About</U></B>' +
+        '<ul>' +
+        '<li>Students Work On Real Time Industry Based Projects And Practicing Both Front End (HTML, CSS, React) And Back End (Python, Django, REST Apis, SQL) Technologies</li>'+
+        '</ul>')">View Details</button>
+        </div>
+      </div>
+      <div class="details-panel" id="detailsPanel">
+        <h2>Select a Card</h2>
+        <p>The details will appear here once you click "View Details" from the left side.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+<section>
+  <div class="container" id="projects" >
+    <div class="left-panel" style="background-color:C31432 ;">
+      <h1 style="color: #984063;">Project Section</h1>
+      <div class="card">
+        <img src="{% static 'images/medicine.jpg' %}" alt="Medical Shop System">
+        <h2 style="color: #984063;">Medical Shop Management System</h2>
+        <button onclick="showDetails('project','Medical Shop Management System',
+        'Developed A System To Manage The Dealer, Medicine, Employee & Customer Data For A Medical Shop.<br>'+
+        'Developed A Module To Maintain Customer Records, Medicine Stocks,Employee Records Prescription Histories<br>'+
+        'Inventory and billing system using Python and MySQL.'+
+        'Technical Discussion With Accurate Team and Designed user-friendly Website And Successfully Managed Project Timelines, Balancing Multiple Problem-solving Tasks.<br> '+
+        '<br><b><u>Technologies Used:</u> HTML, CSS ,Java Script, Python, SQL, Django, ')">View Details</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/campus.jpg' %}" alt="Accurate Info">
+        <h2 style="color: #984063;">Campus Selections System</h2>
+        <button  onclick="showDetails('project', 'Campus Selections System',
+        'Developed a Campus Selection System to streamline the recruitment process for students and companies.'+
+        '<br>Student Module: Designed a user-friendly interface for students to register,upload resumes, and apply for job openings.'+
+        '<br>Company Module: Enabled companies to post job listings, shortlist candidates, and schedule interviews through the system.'+
+        '<br><b><u>Technologies Used:</u> HTML, CSS, JavaScript, PHP And Visual studio Code. ')">View Details</button>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="details-box" id="details-box">
+        <h3>Select a Card</h3>
+        <p>The details will appear here once you click "View Details" from the left side.</p>
+      </div>
+    </div>
+  </div>
+   </section>
+  <br><br>
+  <section>
+
+  </section>
+  <!-- Footer -->
+  <footer class="footer-alt" id="contact">
+    <div class="footer-icons">
+      <a href="tel:+917892686209" title="Call"><i class="fas fa-phone"></i></a>
+      <a href="mailto:hemanthraj.bk@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/b-k-hemanth-raj-b36425230" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/BKHemanthraj" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+<script src="{% static 'javascript/index.js' %}"></script>
+</body>
+</html>
